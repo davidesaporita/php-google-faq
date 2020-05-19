@@ -1,14 +1,21 @@
 .navbar {
+    width: 100%;
+    position: fixed;
+    background: #fff;
+
+    @include padding_side(24px, 40px);
     border-bottom: 1px solid rgba(151,151,151,0.5);
-    @include padding_side(18px);
+
     &__top {
         @include flex(row, flex-start, center);
-        height: 57px; 
+        height: 55px; 
         margin-bottom: 5px;
 
         &__hamburger {
             margin-right: 20px;
             font-size: 20px;
+            cursor: pointer;
+            
             @include responsive($large_desktop) { 
                 display: none;
             }
@@ -27,6 +34,7 @@
         h2 {
             display: none;
         }
+
         @include responsive($large_desktop) {
             h1 {
                 display: none;
@@ -69,6 +77,61 @@
             font-size: 15px;
             color: $link_color_menu;    
         }
-        
     }
+
+    &__hidden {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        left: 0; 
+        width: 300px;
+        background: #fff;
+        border-right: 1px solid rgba(0,0,0,0.5);
+        z-index: 3;
+
+        &__header {
+            @include flex(row, flex-start, center);
+            @include padding_side(24px, 40px);
+            height: 60px; 
+            border-bottom: 1px solid rgba(151,151,151,0.5);
+        }
+
+        li {
+            @include flex();
+            height: 45px;
+            margin-left: 45px;
+            padding-left: 5px;
+            border-bottom: 1px solid rgba(151,151,151,0.5);
+
+            a {
+                color: rgba(0,0,0,0.87);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        &__logo {
+            margin-top: 4px;
+            margin-right: 6px;
+        }
+
+        h1,
+        h2 {
+            margin-top: 4px;
+        }
+
+        &__bg {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.54);
+            z-index: 2;
+        }
+
+    }
+
 }

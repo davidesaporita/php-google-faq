@@ -3,6 +3,10 @@
     margin-top: 10px;
     background-color: $footer_bg;
 
+    @include responsive($desktop) { 
+        margin-top: 40px;
+    }
+
     &__container {
         @include flex(column, flex-start, flex-start);
         @include padding-side(18px);

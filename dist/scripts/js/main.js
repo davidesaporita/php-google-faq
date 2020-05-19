@@ -93,7 +93,20 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+$(document).ready(function () {
+  // Refs
+  var hamburger = $('.navbar__top__hamburger');
+  var navHidden = $('.navbar__hidden');
+  var navHiddenBg = $('.navbar__hidden__bg');
+  hamburger.click(function () {
+    navHidden.show();
+    navHiddenBg.show();
+    navHiddenBg.click(function () {
+      navHidden.hide();
+      navHiddenBg.hide();
+    });
+  });
+});
 
 /***/ }),
 

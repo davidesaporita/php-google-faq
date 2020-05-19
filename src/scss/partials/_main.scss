@@ -1,22 +1,27 @@
 main {
 
     .container {
+        padding-top: 95px;
         max-width: 100%;
     }
 
     @include padding_side(18px);
 
     h2 {
-        padding-top: 12px;
+        padding-top: 60px;
         line-height: 32px;
         font-weight: 500;
         font-size: 24px;
         color: $heading_color;
+
+        &:first-child {
+            padding-top: 12px;
+        }
     }
 
     @include responsive($medium) {
         h2:first-child {
-            padding-top: 60px;
+            padding-top: 90px;
         }
     }
 

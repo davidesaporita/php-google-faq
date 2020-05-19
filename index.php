@@ -49,6 +49,23 @@ foreach($page_content as $content) {
                     <a href="#">Account Google</a>
                 </div>
             </div>
+            <div class="navbar__hidden">
+                <div class="navbar__hidden__header">
+                    <img class="navbar__top__logo" src="src/img/googlelogo.png" alt="">
+                    <h2>Privacy e termini</h2>
+                </div>
+                <div class="navbar__hidden__menu">
+                    <ul>
+                        <li><a href="#">Introduzione</a></li>
+                        <li><a href="#">Norme sulla privacy</a></li>
+                        <li><a href="#">Termini di servizio</a></li>
+                        <li><a href="#">Tecnologie</a></li>
+                        <li><a href="#" class="active">Domande frequenti</a></li>
+                        <li><a href="#">Account Google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar__hidden__bg"></div>
         </nav>
     </header>
     <main>
@@ -76,5 +93,10 @@ foreach($page_content as $content) {
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="dist/scripts/js/main.js"></script>
+
 </body>
 </html>
