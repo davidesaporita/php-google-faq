@@ -1,11 +1,42 @@
-/* Phones (landscape phones, 576px and up) */
+// Mixins
 @mixin responsive($query) {
     @media (min-width: $query) {
         @content;
     }
 }
 
+@mixin flex($dir: row, $jc: flex-start, $ai: center, $wrap: nowrap, $flex-basis: auto) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-basis: $flex-basis;
+    flex-wrap: $wrap;
+}
 
+@mixin padding-side($left: 25px, $right: false) {
+    @if $right != false  {
+        padding-left: $left;
+        padding-right: $right;
+    } @else {
+        $size: $left;
+        padding-left: $size;
+        padding-right: $size;
+    }
+}
+
+@mixin padding-top-bottom($top: 25px, $bottom: false) {
+    @if $bottom != false  {
+        padding-top: $top;
+        padding-bottom: $bottom;
+    } @else {
+        $size: $top;
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+}
+
+// Layout
 body {
     background: #fff;
     font-family: $font_family;
@@ -14,19 +45,17 @@ body {
 
 
 // Typography
-
 a,
 a:hover,
 a:visited {
     color: $link_color;
 }
 
+h1,
 h2 {
-    padding-top: 60px;
-    line-height: 32px;
-    font-weight: 500;
-    font-size: 24px;
-    color: $heading_color;
+    font-size: 20px;
+    font-weight: 400;
+    color: $heading_color_menu;
 }
 
 p { 

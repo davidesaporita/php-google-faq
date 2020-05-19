@@ -8,7 +8,10 @@ a {
   text-decoration: none;
 }
 
-/* Phones (landscape phones, 576px and up) */
+ul {
+  list-style: none;
+}
+
 body {
   background: #fff;
   font-family: "Roboto", sans-serif;
@@ -21,11 +24,10 @@ a:visited {
   color: #3367d6;
 }
 
+h1,
 h2 {
-  padding-top: 60px;
-  line-height: 32px;
-  font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   color: #3c4043;
 }
 
@@ -40,4 +42,100 @@ p {
   line-height: 24px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.navbar__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: auto;
+  flex-wrap: nowrap;
+  height: 57px;
+  margin-bottom: 5px;
+}
+.navbar__top__hamburger {
+  margin-right: 20px;
+  font-size: 20px;
+}
+@media (min-width: 1255px) {
+  .navbar__top__hamburger {
+    display: none;
+  }
+}
+.navbar__top__logo {
+  margin-top: 4px;
+  margin-right: 6px;
+}
+.navbar__top h1,
+.navbar__top h2 {
+  margin-top: 4px;
+}
+.navbar__top h2 {
+  display: none;
+}
+@media (min-width: 1255px) {
+  .navbar__top h1 {
+    display: none;
+  }
+  .navbar__top h2 {
+    display: inline;
+    font-size: 22px;
+  }
+}
+.navbar__bottom {
+  display: none;
+}
+@media (min-width: 1255px) {
+  .navbar__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+  }
+}
+.navbar__bottom li {
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.navbar__bottom li:not(:first-child) {
+  padding-left: 45px;
+}
+.navbar__bottom a {
+  color: #5f6368;
+  font-weight: 500;
+  font-size: 15px;
+}
+.navbar__bottom a.active {
+  color: #3367d6;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #3367d6;
+}
+.navbar__bottom__account {
+  padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #5f6368;
+}
+
+main {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+main h2:first-child {
+  padding-top: 16px;
+}
+main h2 {
+  padding-top: 60px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3c4043;
 }

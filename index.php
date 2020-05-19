@@ -29,8 +29,33 @@ foreach($page_content as $content) {
     <link rel="stylesheet" href="dist/assets/css/main.css">
 </head>
 <body>
-    <header></header>
-    <main><?php echo $html; ?></main>
-    <footer></footer>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__top">
+                <i class="navbar__top__hamburger fas fa-bars"></i>
+                <img class="navbar__top__logo" src="src/img/googlelogo.png" alt="">
+                <h2>Privacy e termini</h2>
+                <h1>Domande frequenti</h1>
+            </div>
+            <div class="navbar__bottom">
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="index.php" class="active">Domande frequenti</a></li>
+                </ul>
+                <div class="navbar__bottom__account">
+                    <a href="#">Account Google</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <?php echo $html; ?>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

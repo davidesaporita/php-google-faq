@@ -1,0 +1,74 @@
+.navbar {
+    border-bottom: 1px solid rgba(151,151,151,0.5);
+    @include padding_side(18px);
+    &__top {
+        @include flex(row, flex-start, center);
+        height: 57px; 
+        margin-bottom: 5px;
+
+        &__hamburger {
+            margin-right: 20px;
+            font-size: 20px;
+            @include responsive($large_desktop) { 
+                display: none;
+            }
+        }
+
+        &__logo {
+            margin-top: 4px;
+            margin-right: 6px;
+        }
+
+        h1,
+        h2 {
+            margin-top: 4px;
+        }
+
+        h2 {
+            display: none;
+        }
+        @include responsive($large_desktop) {
+            h1 {
+                display: none;
+            }
+            h2 {
+                display: inline;
+                font-size: 22px;
+            }   
+        }
+    }
+
+    &__bottom {
+        display: none;
+        @include responsive($large_desktop) {
+            @include flex($jc: space-between, $ai: center);
+        }
+
+        li {
+            display: inline-block;
+            padding-bottom: 8px;
+            &:not(:first-child) {
+                padding-left: 45px;
+            }
+        }
+
+        a {
+            color: $link_color_menu;
+            font-weight: 500;
+            font-size: 15px;
+            &.active {
+                color: $link_color;
+                padding-bottom: 5px;
+                border-bottom: 3px solid $link_color;
+            }
+        }
+
+        &__account {
+            padding-bottom: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            color: $link_color_menu;    
+        }
+        
+    }
+}

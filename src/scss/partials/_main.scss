@@ -1,0 +1,15 @@
+main {
+    @include padding_side(18px);
+
+    h2:first-child {
+        padding-top: 16px;
+    }
+
+    h2 {
+        padding-top: 60px;
+        line-height: 32px;
+        font-weight: 500;
+        font-size: 24px;
+        color: $heading_color;
+    }
+}
