@@ -14,8 +14,16 @@ let mix = require('laravel-mix');
 mix.js('src/js/main.js', 'dist/scripts/js')
    .sass('src/scss/main.scss', 'dist/assets/css')
    .browserSync({ 
-        proxy: "localhost/php-google-faq", 
-        watch: true, 
+        proxy: "http://localhost:80/php-google-faq", 
+        files: [
+                "src/js/main.js",
+                "src/scss/main.scss",
+                "./*.php"
+        ],
+        notify: false
+    })
+    .options({
+        processCssUrls: false
     });
 
 // Full API

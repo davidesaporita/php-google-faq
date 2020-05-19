@@ -9,7 +9,6 @@ a {
 }
 
 /* Phones (landscape phones, 576px and up) */
-
 body {
   background: #fff;
   font-family: "Roboto", sans-serif;
@@ -42,4 +41,3 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
-
