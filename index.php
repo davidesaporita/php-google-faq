@@ -60,7 +60,7 @@ foreach($page_content as $content) {
                         <li><a href="#">Norme sulla privacy</a></li>
                         <li><a href="#">Termini di servizio</a></li>
                         <li><a href="#">Tecnologie</a></li>
-                        <li><a href="#" class="active">Domande frequenti</a></li>
+                        <li class="active"><a href="#" class="active">Domande frequenti</a></li>
                         <li><a href="#">Account Google</a></li>
                     </ul>
                 </div>

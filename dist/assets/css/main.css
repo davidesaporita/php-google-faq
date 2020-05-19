@@ -51,7 +51,7 @@ p {
   background: #fff;
   padding-left: 24px;
   padding-right: 40px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.25);
 }
 .navbar__top {
   display: flex;
@@ -149,7 +149,7 @@ p {
   padding-left: 24px;
   padding-right: 40px;
   height: 60px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.25);
 }
 .navbar__hidden li {
   display: flex;
@@ -161,12 +161,31 @@ p {
   height: 45px;
   margin-left: 45px;
   padding-left: 5px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.25);
+}
+.navbar__hidden li.active {
+  position: relative;
+  background: #d1e0fb;
+}
+.navbar__hidden li.active::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  left: -40px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: #d1e0fb;
+  z-index: 4;
 }
 .navbar__hidden li a {
   color: rgba(0, 0, 0, 0.87);
   font-size: 14px;
   font-weight: 500;
+}
+.navbar__hidden li a.active {
+  color: #3367d6;
 }
 .navbar__hidden__logo {
   margin-top: 4px;
