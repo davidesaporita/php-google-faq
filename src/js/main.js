@@ -5,14 +5,15 @@ $(document).ready(function() {
     var navHidden = $('.navbar__hidden');
     var navHiddenBg = $('.navbar__hidden__bg');
 
-    hamburger.click( () => {
-        navHidden.show();
-        navHiddenBg.show();
+    // vars
+    var timing = 300; // ms
 
+    hamburger.click( () => {
+        navHidden.animate({left: '0px'}, timing);
+        navHiddenBg.fadeIn(timing);
         navHiddenBg.click( () => {
-            navHidden.hide();
-            navHiddenBg.hide();
+            navHidden.animate({left: '-305px'}, timing);
+            navHiddenBg.fadeOut(timing);
         });
     });
-
 });

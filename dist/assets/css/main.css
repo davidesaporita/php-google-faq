@@ -130,11 +130,10 @@ p {
   color: #5f6368;
 }
 .navbar__hidden {
-  display: none;
   position: absolute;
   height: 100vh;
   top: 0;
-  left: 0;
+  left: -350px;
   width: 300px;
   background: #fff;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
