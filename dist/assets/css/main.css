@@ -129,13 +129,24 @@ main {
   padding-left: 18px;
   padding-right: 18px;
 }
-main h2:first-child {
-  padding-top: 16px;
+main .container {
+  width: 100%;
 }
 main h2 {
-  padding-top: 60px;
+  padding-top: 12px;
   line-height: 32px;
   font-weight: 500;
   font-size: 24px;
   color: #3c4043;
+}
+@media (min-width: 648px) {
+  main h2:first-child {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1010px) {
+  main {
+    width: 980px;
+    margin: 0 auto;
+  }
 }

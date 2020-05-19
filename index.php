@@ -52,7 +52,9 @@ foreach($page_content as $content) {
         </nav>
     </header>
     <main>
-        <?php echo $html; ?>
+        <div class="container">
+            <?php echo $html; ?>
+        </div>
     </main>
     <footer>
 
