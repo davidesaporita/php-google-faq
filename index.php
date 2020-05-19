@@ -56,8 +56,25 @@ foreach($page_content as $content) {
             <?php echo $html; ?>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__language-select">
+                <img src="src/img/languages.png" alt="">
+                <select name="language_choice" id="languages">
+                    <option value="Italiano">Siciliano</option>
+                    <option value="Italiano" selected>Italiano</option>
+                    <option value="Italiano">Sardo</option>
+                </select>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Tutto su Google</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Termini</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

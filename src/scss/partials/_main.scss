@@ -1,7 +1,7 @@
 main {
 
     .container {
-        width: 100%;
+        max-width: 100%;
     }
 
     @include padding_side(18px);
@@ -14,14 +14,14 @@ main {
         color: $heading_color;
     }
 
-    @include responsive($tablet) {
+    @include responsive($medium) {
         h2:first-child {
             padding-top: 60px;
         }
     }
 
     @include responsive($desktop) {
-        width: 980px;
+        width: $container_width;
         margin: 0 auto;
     }
 }

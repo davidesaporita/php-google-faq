@@ -1,14 +1,20 @@
+// Layout
+$container_width: 980px;
+
 // Responsive
 $large_desktop: 1255px;
 $desktop: 1010px;
-$tablet: 648px;
+$tablet: 768px;
+$medium: 648px;
 
 // Colors
 $test_color: rgba(0,0,0,0.87);
 $link_color: #3367d6;
 $link_color_menu: #5f6368;
+$link_color_footer: rgba(61,61,61,.55);
 $heading_color: #3c4043;
 $heading_color_menu: #3c4043;
+$footer_bg: #f5f5f5;
 
 // Fonts
 $font_family: 'Roboto', sans-serif;
