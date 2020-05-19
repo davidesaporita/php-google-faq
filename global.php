@@ -1,12 +1,5 @@
 <?php 
 
-/**
- * Descrizione
- * Riscrivere la pagina del sito  https://policies.google.com/faq
- * Gestire il “Database” (array) e la visualizzazione di queste domande e risposte con PHP.
- * Non preoccupatevi dei link presenti nel testo delle risposte
- */
-
 $page_content = [
     [
         "question"  => "<h3>Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?</h3>",
