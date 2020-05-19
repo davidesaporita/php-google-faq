@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.js('src/js/main.js', 'dist/scripts/js')
    .sass('src/scss/main.scss', 'dist/assets/css')
    .browserSync({ 
-        proxy: "localhost:80/php-google-faq/", 
+        proxy: "localhost/php-google-faq", 
         watch: true, 
     });
 

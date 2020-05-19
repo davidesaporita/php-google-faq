@@ -1,0 +1,45 @@
+/* Phones (landscape phones, 576px and up) */
+@mixin responsive($query) {
+    @media (min-width: $query) {
+        @content;
+    }
+}
+
+
+body {
+    background: #fff;
+    font-family: $font_family;
+    color: rgba(0,0,0,0.87);
+}
+
+
+// Typography
+
+a,
+a:hover,
+a:visited {
+    color: $link_color;
+}
+
+h2 {
+    padding-top: 60px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    color: $heading_color;
+}
+
+p { 
+    margin: {
+        top: 10px;
+        bottom: 10px;
+        block-end: 10px;
+        block-start: 10px;
+    }
+    padding: {
+        top: 20px;
+    }
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+}

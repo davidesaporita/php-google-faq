@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Phones (landscape phones, 576px and up) */
+
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a,
+a:hover,
+a:visited {
+  color: #3367d6;
+}
+
+h2 {
+  padding-top: 60px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3c4043;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  padding-top: 20px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
